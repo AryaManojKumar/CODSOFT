@@ -1,7 +1,6 @@
 Movie Rating Prediction — Summary
 
 1.Project Goal
-
 To build a machine learning model that predicts movie ratings using features such as:
 ⦁	Genre
 ⦁	Director
@@ -20,11 +19,9 @@ To build a machine learning model that predicts movie ratings using features suc
 ⦁	Removed rows with missing ratings
 
 3.Modeling Approach
-
 A Random Forest Regression model was trained.
 
 Steps included:
-
 ⦁	Train-test split (80/20)
 ⦁	Transformation pipeline:
 ⦁	Imputation (median & most frequent)
@@ -33,21 +30,18 @@ Steps included:
 ⦁	Model training using RandomForestRegressor
 
 4.Evaluation metrics:
-⦁	RMSE
-⦁	MAE
+⦁	RMSE(Root Mean Square Error)
+⦁	MAE(Mean Absolute Error)
 ⦁	R²
 
 5.Results:
 
 The model predicts ratings with the following approximate performance :
 ⦁	RMSE: ~5.3
-
 ⦁	MAE: ~3.8
-
 ⦁	R² Score: Low (because only one feature was strongly correlated)
 
 Even though performance was limited, the model successfully demonstrates:
-
 ⦁	Feature engineering
 ⦁	Preprocessing real-world movie data
 ⦁	Regression modeling
